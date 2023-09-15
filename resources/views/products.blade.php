@@ -55,6 +55,32 @@
             
         </div>
 
+
+        
+        {{-- STYLE AND CODE FOR PAGINATION STARTS--}}
+        <style>
+            svg{
+                width: 20px;
+            }
+            nav p{
+                display: none;
+            }
+            nav .flex a{
+                display: none;
+            }
+            nav .flex span{
+                display: none;
+            }
+        </style>
+
+
+        <div class="text-right">
+            {{ $products->links() }}
+        </div>
+
+        {{-- STYLE AND CODE FOR PAGINATION ENDS--}}
+    
+
     </div>
 </div>
 <!-- Products End -->

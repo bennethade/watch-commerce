@@ -32,7 +32,7 @@ Route::get('/products', [ProjectController::class,'products'])->name('products')
 
 Route::get('/about', function(){
     return view('about');
-});
+})->name('about');
 
 Route::get('/single_product/{id}', [ProjectController::class, 'single_product'])->name('single.product');
 
@@ -67,5 +67,18 @@ Route::post('/place_order', [CartController::class, 'place_order'])->name('place
 Route::get('/payment', [PaymentController::class, 'payment'])->name('payment');
 
 
+// START ROUTE FOR PAYSTACK Laravel 8 & 9
+Route::post('/pay', [App\Http\Controllers\PaymentController::class, 'redirectToGateway'])->name('pay');
+
+Route::get('/payment/callback', 'PaymentController@handleGatewayCallback');
+
+// END ROUTE FOR PAYSTACK Laravel 8 & 9
 
 
+
+
+
+
+
+
+Route::get('/thank_you', [PaymentController::class, 'thank_you'])->name('thank_you');

@@ -156,6 +156,9 @@ return [
     */
 
     'providers' => ServiceProvider::defaultProviders()->merge([
+
+        Unicodeveloper\Paystack\PaystackServiceProvider::class,
+
         /*
          * Package Service Providers...
          */
@@ -182,6 +185,7 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
+        'Paystack' => Unicodeveloper\Paystack\Facades\Paystack::class,
         // 'Example' => App\Facades\Example::class,
     ])->toArray(),
 

@@ -15,7 +15,7 @@
                         <li><span class="fa-li"><i class="far fa-arrow-alt-circle-right"></i></span>Read & reply to messages</li>
                         <li><span class="fa-li"><i class="far fa-arrow-alt-circle-right"></i></span>Compatible with all devices</li>
                     </ul>
-                    <a class="btn" href="#">Buy Now</a>
+                    <a class="btn" href="{{ route('products') }}">Shop Now</a>
                 </div>
             </div>
             <div class="col-md-5">
@@ -378,8 +378,8 @@
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra at massa sit amet ultricies
                     </p>
-                    <h3><i class="fa fa-map-marker"></i>123 Trade Tower, Los Angeles, CA, USA</h3>
-                    <h3><i class="fa fa-envelope"></i>email@example.com</h3>
+                    <h3><i class="fa fa-map-marker"></i>Abuja Nigeria</h3>
+                    <h3><i class="fa fa-envelope"></i>bennethade21@gmail.com</h3>
                     <h3><i class="fa fa-phone"></i>+123-456-7890</h3>
                     <a class="btn" href="#">Contact Us</a>
                     <div class="social">

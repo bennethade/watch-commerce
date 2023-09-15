@@ -34,7 +34,7 @@
                     <ul class="nav-menu">
                         <li class="menu-active"><a href="/">Home</a></li>
                         <li><a href="{{ route('products') }}">Products</a></li>
-                        <li><a href="">About</a></li>
+                        <li><a href="{{ route('about') }}">About</a></li>
                         <li><a href="#testimonials">Reviews</a></li>
                         <li><a href="{{ route('cart') }}">Cart</a></li>
                     
